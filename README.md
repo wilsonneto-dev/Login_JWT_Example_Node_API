@@ -5,6 +5,17 @@
 - Generate a JWT token on login route
 - Protect routes verifying JWT token
 
+Routes:
+
+| ENDPOINT 	| POST            | GET       | PUT         | DELETE |
+| ------------	| --------------- | --------- | ----------- | ------ |
+| /user		  	| cadastrar usuário |       |       |  |
+| /auth/login 	| logar |  |  |  |
+| /auth/refresh	| refresh token |    |  |  |
+| 	|            |    |  |  |
+| /test	|            | rota de teste protegida   |  |  |
+
+
 Using libs:
 
 - jsonwebtoken
