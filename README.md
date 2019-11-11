@@ -17,7 +17,6 @@ Using libs:
 - Nodemon
 
 
-======
 
 By: :relaxed: Wilson Neto
 [Linkedin](https://linkedin.com/in/wilsonnetobr/)
