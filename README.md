@@ -5,7 +5,7 @@
 - Generate a JWT token on login route
 - Protect routes verifying JWT token
 
-Routes:
+#### Routes:
 
 | ENDPOINT 	| POST            | GET       | PUT         | DELETE |
 | ------------	| --------------- | --------- | ----------- | ------ |
@@ -16,7 +16,7 @@ Routes:
 | /test	|            | rota de teste protegida   |  |  |
 
 
-Using libs:
+#### Using libs:
 
 - jsonwebtoken
 - bcrypt
@@ -29,7 +29,7 @@ Using libs:
 
 
 -----  
-By: :relaxed: Wilson Neto  
-[Linkedin](https://linkedin.com/in/wilsonnetobr/)  
-[Blog](http://wilsonneto.com.br)  
+:relaxed: by: Wilson Neto  
+[Linkedin](https://linkedin.com/in/wilsonnetobr/)
+[Blog](http://wilsonneto.com.br)
 [Github](https://github.com/wilsonneto-dev)  
