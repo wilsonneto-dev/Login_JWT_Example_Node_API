@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.rendererType": "dom",
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+    },
+}
