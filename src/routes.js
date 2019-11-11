@@ -1,22 +1,19 @@
 const express = require("express");
 
-const Auth = require("./middlewares/AuthMiddleware");
+const JWTAuth = require("./middlewares/AuthMiddleware");
 
 const UserController = require("./controllers/UserController");
 const AuthController = require("./controllers/AuthController");
+const TestController = require("./controllers/TestController");
 
 const routes = express.Router();
 
 // endpoints abertos
 routes.post("/users", UserController.store);
 routes.post("/auth/login", AuthController.login);
+routes.post("/auth/refresh", AuthController.refresh);
 
-// endpoints proregidos
-routes.get("/test", Auth.protect, (req, res) => {
-  return res.json({
-    tokenData: req.tokenData,
-    now: Math.floor(Date.now() / 1000)
-  });
-});
+// endpoints protegidos
+routes.get("/test", JWTAuth.protect, TestController.test);
 
 module.exports = routes;
