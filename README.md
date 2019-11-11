@@ -1,4 +1,4 @@
-## Login JWT in a Node API
+## Login JWT on a Node API
 #### Simple example of a JWT authentication on a Node API.
 
 - Encript user's password in registration
