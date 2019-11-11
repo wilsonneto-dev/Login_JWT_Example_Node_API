@@ -9,11 +9,11 @@
 
 | ENDPOINT 	| POST            | GET       | PUT         | DELETE |
 | ------------	| --------------- | --------- | ----------- | ------ |
-| /user		  	| cadastrar usuário |       |       |  |
-| /auth/login 	| logar |  |  |  |
+| /user		  	| register user |       |       |  |
+| /auth/login 	| login |  |  |  |
 | /auth/refresh	| refresh token |    |  |  |
 | 	|            |    |  |  |
-| /test	|            | rota de teste protegida   |  |  |
+| /test	|            | protected route   |  |  |
 
 
 #### Using libs:
