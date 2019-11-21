@@ -83,10 +83,18 @@ module.exports = {
         expiresIn: `${process.env.JWT_MINUTES}m`
       });
 
+      // gerar o REFRESH JWT
+      const refreshKey = `${process.env.JWT_REFRESH_KEY}${user.pass}`;
+      const refreshToken = JWT.sign(jwtPayload, refreshKey, {
+        algorithm: process.env.JWT_ALGORITHM,
+        expiresIn: `${process.env.JWT_REFRESH_DAYS}d`
+      });
+
       return res.json({
         success: true,
         message: "autorizado",
-        token
+        token,
+        refreshToken
       });
     });
   }
