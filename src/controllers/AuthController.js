@@ -42,6 +42,7 @@ module.exports = {
 
     // return success
     return res.json({
+      user,
       success: true,
       message: "Usuário logado com sucesso",
       token,
@@ -91,6 +92,7 @@ module.exports = {
       });
 
       return res.json({
+        user,
         success: true,
         message: "autorizado",
         token,
