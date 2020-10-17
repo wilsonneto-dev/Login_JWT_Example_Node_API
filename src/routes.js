@@ -15,5 +15,10 @@ routes.post("/auth/refresh", AuthController.refresh);
 
 // endpoints protegidos
 routes.get("/test", JWTAuth.protect, TestController.test);
+routes.get("/", (req, res) => {
+  res.json({
+    ok: true
+  });
+});
 
 module.exports = routes;
